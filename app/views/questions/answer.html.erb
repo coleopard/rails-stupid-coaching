@@ -1,0 +1,17 @@
+<% if @answer.present? %>
+<%if @answer == "I am going to work" %>
+<p><%="Great!"%></p>
+
+<%elsif @answer.include?"?" %>
+<p><%="Silly question, get dressed and go to work!" %></p>
+
+<%else @answer %>
+<p><%="I don't care, get dressed and go to work!!" %></p>
+
+<% end %>
+<%=link_to "Ask the coach", ask_path%>
+<% end %>
+<%=link_to "Ask the coach", ask_path%>
+
+
+
